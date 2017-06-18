@@ -14,10 +14,10 @@ public class InsertionSort {
     //大二学的
     public static void sort2(int[] a) {
         for(int i=0;i<a.length;i++) {
-            for(int j=i;j>0;j--) {
-                if(a[j-1] > a[j]) {
-                    swap(a,j-1,j);
-                }
+            int j=i;
+            while(j>0 && a[j-1] > a[j]) {
+                swap(a,j-1,j);
+                j--;
             }
         }
     }
