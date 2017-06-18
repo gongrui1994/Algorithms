@@ -1,9 +1,9 @@
-package sort;
+package sort.basic;
 
 /**
  * Created by gongrui on 2017/6/18.
  */
-public class SelectionSort {
+public class BubbleSort {
 
     public static void swap(int[] a,int i,int j) {
         int temp=a[i];
@@ -13,18 +13,12 @@ public class SelectionSort {
 
     public static void sort(int[] a) {
         int n=a.length;
-        int lowIndex;
-        int lowValue;
         for(int i=0;i<n;i++) {
-            lowIndex=i;
-            lowValue=a[i];
-            for(int j=i;j<n;j++) {
-                if(a[j] < lowValue) {
-                    lowIndex = j;
-                    lowValue = a[j];
+            for(int j=n-1;j>i;j--) {
+                if(a[j] > a[j-1]) {
+                    swap(a,j,j-1);
                 }
             }
-            swap(a,i,lowIndex);
         }
     }
 

@@ -1,4 +1,4 @@
-package sort;
+package sort.basic;
 
 /**
  * Created by gongrui on 2017/6/17.
