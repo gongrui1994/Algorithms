@@ -1,6 +1,7 @@
 package sort.basic;
 
 /**
+ * 插入排序
  * Created by gongrui on 2017/6/17.
  */
 public class InsertionSort {
