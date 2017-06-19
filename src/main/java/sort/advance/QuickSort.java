@@ -2,6 +2,7 @@ package sort.advance;
 
 /**
  * 快速排序
+ * 算法导论
  * Created by gongrui on 2017/6/18.
  */
 public class QuickSort {
