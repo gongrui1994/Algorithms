@@ -1,8 +1,9 @@
 package sort.advance;
 
 /**
- * 最大堆
- * 递增排序，从小到大
+ * 堆排序
+ * 使用最大堆
+ * 得到递增排序的数组，从小到大
  * Created by gongrui on 2017/6/18.
  */
 public class HeapSort {
@@ -15,6 +16,7 @@ public class HeapSort {
         a[j] = temp;
     }
 
+    //最大堆平衡
     public static void maxHeapify(int[] a,int i) {
         int l=i*2;
         int r=i*2+1;
@@ -33,19 +35,24 @@ public class HeapSort {
         }
     }
 
+    //建立一个最大堆
     public static void buildMaxHeap(int[] a) {
         n = a.length-1;
         heapSize = n;
+        //对每个子树执行最大堆平衡
         for(int i=n/2;i>=1;i--) {
             maxHeapify(a,i);
         }
     }
 
     public static void heapSort(int[] a) {
+        //建立最大堆
         buildMaxHeap(a);
+        //从最后一个数开始，将最大堆的根节点与它交换，得到递增排序的数组
         for(int i=n;i>=2;i--) {
             swap(a,1,i);
             heapSize--;
+            //给剩下的堆执行最大堆平衡操作
             maxHeapify(a,1);
         }
     }
