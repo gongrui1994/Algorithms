@@ -1,6 +1,7 @@
 package sort.basic;
 
 /**
+ * 冒泡排序
  * Created by gongrui on 2017/6/18.
  */
 public class BubbleSort {
