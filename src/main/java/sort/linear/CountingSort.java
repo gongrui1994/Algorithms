@@ -36,7 +36,6 @@ public class CountingSort {
     public static void main(String[] args) {
         int[] a = {2,5,3,0,2,2,0,3};
         int[] b = new int[a.length];
-        int k;
         countingSort(a,b,INFINITY);//+1的目的是增加数组长度 使之能存放0-8的出现次数
         for(int e:b) {
             System.out.println(e);
