@@ -12,6 +12,18 @@ public class InsertionSort {
         a[j] = temp;
     }
 
+    //自己写的
+    public static void sort3(int[] a) {
+        int n=a.length;
+        for(int i=0;i<n-1;i++) {
+            for(int j=i+1;j<n;j++) {
+                if(a[j] < a[i]) {
+                    swap(a,i,j);
+                }
+            }
+        }
+    }
+
     //大二学的
     public static void sort2(int[] a) {
         for(int i=0;i<a.length;i++) {
@@ -38,7 +50,7 @@ public class InsertionSort {
 
     public static void main(String[] args) {
         int[] a = {5, 2, 4, 6, 1, 3};
-        sort2(a);
+        sort3(a);
         for(int e:a) {
             System.out.println(e);
         }
