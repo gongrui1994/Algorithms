@@ -2,6 +2,8 @@ package string;
 
 /**
  * 朴素字符串匹配算法
+ * 预处理时间 0 匹配时间 O((n-m+1)m)
+ * 时间复杂度O((n-m+1)m)
  * Created by gongrui on 2017/6/26.
  */
 public class NaiveStringMatcher {
