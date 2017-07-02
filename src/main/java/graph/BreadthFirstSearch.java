@@ -29,7 +29,7 @@ public class BreadthFirstSearch {
     }
 
     public static void breadthFirstSearch(int[][] graph, int[] v) {
-        //标识位
+        //标志位
         boolean[] isChoosed = new boolean[v.length];
         for(int i=0;i<v.length;i++) {
             if(!isChoosed[v[i]]) {
