@@ -1,4 +1,4 @@
-package string;
+package stringmatcher;
 
 /**
  * Created by gongrui on 2017/7/1.

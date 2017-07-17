@@ -1,4 +1,4 @@
-package string;
+package stringmatcher;
 
 /**
  * 朴素字符串匹配算法
