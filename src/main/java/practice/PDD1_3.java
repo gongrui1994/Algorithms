@@ -38,6 +38,5 @@ public class PDD1_3 {
             }
             System.out.println(count);
         }
-
     }
 }
