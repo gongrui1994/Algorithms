@@ -60,7 +60,7 @@ public class HeapSort {
     public static int heapSize;
     public static int n;//n为需要排序数组的真实长度,下标从1开始到a.length-1，所以n=a.length-1
     public static void main(String[] args) {
-        //堆排序数组下标从1开始比较好，包括求子儿子，以及求父节点
+        //堆排序数组下标从1开始比较好，包括求子儿子，以及求父节点，如果是从0开始，求父节点会出错
         int[] a = {INFINITY,2,8,7,1,3,5,6,4};
         heapSort(a);
         for(int e:a) {
